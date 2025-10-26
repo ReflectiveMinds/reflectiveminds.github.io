@@ -93,14 +93,14 @@
     <div class="split">
       <div>
         <h2>About the Studio</h2>
-        <p><strong>Reflective Minds Studio</strong> is a small, developer-led studio focused on robust, modular gameplay systems for Unity. Our flagship product, <em>RPG Combat Toolkit (TBCS)</em>, helps teams ship grid‑based, turn‑based combat faster — with clean abstractions for actors, stats, abilities, overlays, and both 2D/3D modes.</p>
+        <p><strong>Reflective Minds Studio</strong> is a small, developer-led studio focused on robust, modular gameplay systems for Unity. Our flagship product, <em>RPG Combat Toolkit (TBCS)</em>, helps teams ship grid-based, turn-based combat faster — with clean abstractions for actors, stats, abilities, overlays, and both 2D/3D modes.</p>
       </div>
       <div class="card">
         <h3>Values</h3>
         <ul>
           <li>💡 Clear architecture &amp; modularity</li>
-          <li>🧪 Battle‑tested editor tools</li>
-          <li>🎯 Practical, asset‑store ready</li>
+          <li>🧪 Battle-tested editor tools</li>
+          <li>🎯 Practical, asset-store ready</li>
         </ul>
       </div>
     </div>
@@ -108,7 +108,25 @@
 
   <section id="product" class="section container">
     <h2>RPG Combat Toolkit - Turn-Based Tactics (TBCS)</h2>
-    <p class="muted">A complete, modular framework for grid‑based, turn‑based combat in Unity.</p>
+    <p class="muted">A complete, modular framework for grid-based, turn-based combat in Unity.</p>
+
+    <!-- Product banner -->
+    <figure class="product-banner">
+      <picture>
+        <!-- Optional WebP (smaller, if you export it) -->
+        <source type="image/webp"
+                srcset="assets/tbcs-banner.webp 1x, assets/tbcs-banner@2x.webp 2x">
+        <!-- Fallback PNG/JPG -->
+        <img
+          src="assets/tbcs-banner.png"
+          srcset="assets/tbcs-banner@2x.png 2x"
+          alt="RPG Combat Toolkit (TBCS) — grid-based, turn-based combat in Unity with 2D & 3D modes"
+          loading="lazy"
+          width="1200" height="400">
+      </picture>
+      <figcaption class="banner-caption">RPG Combat Toolkit (TBCS)</figcaption>
+    </figure>
+
     <div class="features-grid">
       <div class="feature">
         <h3>🔧 Modular Architecture</h3>
@@ -123,14 +141,14 @@
         <p>Pluggable evaluators for shapes, ranges, and filters, with polished zone previews and line arrows.</p>
       </div>
       <div class="feature">
-        <h3>📝 Editor‑first</h3>
+        <h3>📝 Editor-first</h3>
         <p>Wizards, clean inspectors, and sensible defaults to speed up setup and iteration.</p>
       </div>
     </div>
 
     <div class="product-cta">
       <!-- Replace the # with your Asset Store listing when live -->
-      <a class="btn primary" href="#" aria-disabled="true" title="Coming soon">View on Unity Asset Store</a>
+      <a class="btn primary" href="#" aria-disabled="true" onclick="event.preventDefault();" title="Coming soon">View on Unity Asset Store</a>
       <a class="btn ghost" href="#media">Watch Demo</a>
     </div>
   </section>
@@ -161,7 +179,7 @@
 
   <footer class="footer container">
     <div>© <span id="y"></span> Reflective Minds Studio</div>
-    <div class="small">Built with GitHub Pages • <a href="https://reflectiveminds.github.io">Source</a></div>
+    <div class="small">Built with GitHub Pages • <a href="https://github.com/reflectiveminds/reflectiveminds.github.io">Source</a></div>
   </footer>
 
   <script>
