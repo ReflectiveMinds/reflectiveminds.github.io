@@ -1,6 +1,6 @@
-# Reflective Minds Studio — Website
+# Arkana Mechanika Studios — Website
 
-This is the public website for **Reflective Minds Studio** hosted on GitHub Pages.
+This is the public website for **Arkana Mechanika Studios** hosted on GitHub Pages.
 
 ## Local development
 Just open `index.html` in your browser. No build step required.
