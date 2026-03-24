@@ -644,3 +644,169 @@
       .media-grid { grid-template-columns: 1fr; }
       .hero-actions, .product-cta-row { flex-direction: column; align-items: stretch; }
     }
+
+/* ============================================================
+   TRUST BAR
+============================================================ */
+.trust-bar {
+  position: relative; z-index: 1;
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0.65rem 0;
+  overflow: hidden;
+}
+.trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem 1.4rem;
+}
+.trust-item { font-size: 0.79rem; color: var(--text-secondary); white-space: nowrap; }
+.trust-sep  { color: var(--text-muted); font-size: 0.72rem; }
+
+/* ============================================================
+   WHAT'S IN THE BOX
+============================================================ */
+.in-box-section {
+  margin-top: 2.5rem;
+  padding: 1.8rem 2rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-xl);
+}
+.in-box-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  margin-bottom: 1.1rem;
+}
+.in-box-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.55rem;
+  margin-bottom: 1.8rem;
+}
+.in-box-item {
+  font-size: 0.88rem;
+  color: var(--text-primary);
+  padding: 0.5rem 0.8rem;
+  background: var(--bg-card);
+  border-radius: var(--r-sm);
+  border: 1px solid var(--border);
+}
+
+/* ============================================================
+   TIME-TO-VALUE COMPARISON
+============================================================ */
+.tvc-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--border);
+}
+.tvc-block {
+  flex: 1;
+  min-width: 150px;
+  padding: 1.1rem 1.4rem;
+  border-radius: var(--r-lg);
+  text-align: center;
+}
+.tvc-bad  { background: rgba(251,113,133,0.07); border: 1px solid rgba(251,113,133,0.20); }
+.tvc-good { background: var(--teal-dim);        border: 1px solid var(--teal-border); }
+.tvc-label {
+  font-size: 0.72rem; color: var(--text-muted);
+  text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.45rem;
+}
+.tvc-bad  .tvc-value { color: var(--rose);  font-size: 1.35rem; font-weight: 700; font-family: 'Outfit', sans-serif; }
+.tvc-good .tvc-value { color: var(--teal);  font-size: 1.05rem; font-weight: 700; font-family: 'Outfit', sans-serif; line-height: 1.4; }
+.tvc-arrow { font-size: 1.4rem; color: var(--text-muted); flex-shrink: 0; }
+
+/* ============================================================
+   NOTIFY FORM (email capture)
+============================================================ */
+.notify-box {
+  background: var(--bg-card);
+  border: 1px solid var(--teal-border);
+  border-radius: var(--r-lg);
+  padding: 1.8rem;
+  text-align: center;
+  min-width: 240px;
+}
+.notify-label {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem; font-weight: 600;
+  color: var(--text-primary); margin-bottom: 0.4rem;
+}
+.notify-sub {
+  font-size: 0.82rem; color: var(--text-secondary);
+  margin-bottom: 1rem; line-height: 1.55;
+}
+.notify-form {
+  display: flex; gap: 0.5rem;
+  flex-wrap: wrap; justify-content: center;
+  margin-bottom: 0.6rem;
+}
+.notify-input {
+  flex: 1; min-width: 170px;
+  padding: 0.55rem 1rem;
+  background: var(--bg-raised);
+  border: 1px solid var(--border-bright);
+  border-radius: 999px;
+  color: var(--text-primary);
+  font-size: 0.88rem; font-family: 'Inter', sans-serif;
+  outline: none;
+  transition: border-color var(--t-fast);
+}
+.notify-input:focus  { border-color: var(--teal-border); }
+.notify-input::placeholder { color: var(--text-muted); }
+.notify-fine { font-size: 0.72rem; color: var(--text-muted); }
+
+/* ============================================================
+   FAQ
+============================================================ */
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.1rem;
+  margin-top: 2rem;
+}
+.faq-item {
+  padding: 1.3rem 1.4rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  transition: border-color var(--t-med);
+}
+.faq-item:hover { border-color: var(--border-bright); }
+.faq-q {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.93rem; font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.55rem;
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid var(--border);
+}
+.faq-a { font-size: 0.86rem; color: var(--text-secondary); line-height: 1.65; }
+
+/* ============================================================
+   RESPONSIVE ADDITIONS
+============================================================ */
+@media (max-width: 960px) {
+  .in-box-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .trust-row   { gap: 0.3rem 0.8rem; }
+  .tvc-row     { flex-direction: column; }
+  .tvc-arrow   { transform: rotate(90deg); }
+  .tvc-block   { width: 100%; }
+  .notify-form { flex-direction: column; }
+  .notify-input{ min-width: 100%; }
+  .in-box-grid { grid-template-columns: 1fr; }
+  .faq-grid    { grid-template-columns: 1fr; }
+}
