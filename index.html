@@ -79,11 +79,19 @@
         <a href="#product" role="listitem">Toolkit</a>
         <a href="#docs"    role="listitem">Docs</a>
         <a href="#media"   role="listitem">Media</a>
+        <a href="#contact" role="listitem">Contact</a>
+        <a href="https://arkana-mechanika-studios.itch.io/rpg-combat-toolkit-demo-1"
+           class="nav-mobile-cta" target="_blank" rel="noopener noreferrer" role="listitem">▶ Play Demo</a>
       </div>
       <div class="nav-actions">
         <a href="#contact" class="btn btn-outline-teal btn-sm">Contact</a>
         <a href="https://arkana-mechanika-studios.itch.io/rpg-combat-toolkit-demo-1"
            class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">▶ Play Demo</a>
+        <button class="nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
       </div>
     </nav>
   </header>
@@ -142,20 +150,6 @@
     </section>
 
 
-    <!-- trust bar -->
-    <div class="trust-bar" aria-label="Product highlights">
-      <div class="container"><div class="trust-row">
-        <span class="trust-item">🎮 Demo on itch.io</span>
-        <span class="trust-sep">·</span>
-        <span class="trust-item">⚙️ Unity 2021.3 LTS → 6.x</span>
-        <span class="trust-sep">·</span>
-        <span class="trust-item">🎨 URP &amp; Built-in</span>
-        <span class="trust-sep">·</span>
-        <span class="trust-item">📐 2D &amp; 3D</span>
-        <span class="trust-sep">·</span>
-        <span class="trust-item">🔜 Unity Asset Store — coming soon</span>
-      </div></div>
-    </div>
     <!-- ─── TICKER ───────────────────────────────────────────────────── -->
     <div class="ticker" aria-hidden="true">
       <div class="ticker-track">
@@ -449,47 +443,12 @@
             </div>
             <figcaption class="shot-cap">Grid &amp; overlays</figcaption>
           </figure>
-          <figure class="shot" role="listitem">
-            <div class="shot-img-wrap">
-              <img src="/assets/screenshot-2.png" alt="Ability visualizer in action" loading="lazy">
-              <div class="shot-overlay" aria-hidden="true">🔍</div>
-            </div>
-            <figcaption class="shot-cap">Ability visualizer</figcaption>
-          </figure>
-          <figure class="shot" role="listitem">
-            <div class="shot-img-wrap">
-              <img src="/assets/screenshot-3.png" alt="Both 2D and 3D modes" loading="lazy">
-              <div class="shot-overlay" aria-hidden="true">🔍</div>
-            </div>
-            <figcaption class="shot-cap">2D &amp; 3D modes</figcaption>
-          </figure>
-          <figure class="shot" role="listitem">
-            <div class="shot-img-wrap">
-              <img src="/assets/screenshot-4.png" alt="Inventory and equipment UI" loading="lazy">
-              <div class="shot-overlay" aria-hidden="true">🔍</div>
-            </div>
-            <figcaption class="shot-cap">Inventory &amp; equipment</figcaption>
-          </figure>
-          <figure class="shot" role="listitem">
-            <div class="shot-img-wrap">
-              <img src="/assets/screenshot-5.png" alt="Turn order and combat log" loading="lazy">
-              <div class="shot-overlay" aria-hidden="true">🔍</div>
-            </div>
-            <figcaption class="shot-cap">Turn order &amp; combat log</figcaption>
-          </figure>
-          <figure class="shot" role="listitem">
-            <div class="shot-img-wrap">
-              <img src="/assets/screenshot-6.png" alt="Status effects and overlays" loading="lazy">
-              <div class="shot-overlay" aria-hidden="true">🔍</div>
-            </div>
-            <figcaption class="shot-cap">Status effects &amp; overlays</figcaption>
-          </figure>
         </div>
 
         <div class="video-wrap">
           <iframe
             title="RPG Combat Toolkit Prelaunch Trailer"
-            src="https://www.youtube.com/embed/IBTDLHv8790"
+            src="https://www.youtube.com/embed/S3CrQBJCQlE"
             frameborder="0" loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
@@ -542,21 +501,21 @@
         </div>
 
         <nav class="social-list" aria-label="Social media links">
-          <a href="#" class="social-item" aria-label="Twitter / X — coming soon">
+          <div class="social-item social-item-disabled">
             <div class="social-icon vi-blue" aria-hidden="true">𝕏</div>
             <span>Twitter / X</span>
-            <span class="pill pill-amber" style="margin-left:auto;font-size:0.7rem;">Soon</span>
-          </a>
-          <a href="#" class="social-item" aria-label="YouTube — coming soon">
+            <span class="pill pill-amber" style="margin-left:auto;font-size:0.7rem;">Coming soon</span>
+          </div>
+          <div class="social-item social-item-disabled">
             <div class="social-icon" style="background:rgba(251,71,71,0.12);border:1px solid rgba(251,71,71,0.18);" aria-hidden="true">▶</div>
             <span>YouTube</span>
-            <span class="pill pill-amber" style="margin-left:auto;font-size:0.7rem;">Soon</span>
-          </a>
-          <a href="#" class="social-item" aria-label="Discord — coming soon">
+            <span class="pill pill-amber" style="margin-left:auto;font-size:0.7rem;">Coming soon</span>
+          </div>
+          <div class="social-item social-item-disabled">
             <div class="social-icon vi-purple" aria-hidden="true">💬</div>
             <span>Discord</span>
-            <span class="pill pill-amber" style="margin-left:auto;font-size:0.7rem;">Soon</span>
-          </a>
+            <span class="pill pill-amber" style="margin-left:auto;font-size:0.7rem;">Coming soon</span>
+          </div>
         </nav>
       </div>
     </div>
@@ -581,8 +540,76 @@
     </div>
   </footer>
 
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <img class="lightbox-img" id="lightbox-img" alt="">
+  </div>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Hamburger menu
+    (function() {
+      var btn = document.querySelector('.nav-hamburger');
+      var links = document.querySelector('.nav-links');
+      if (!btn || !links) return;
+      btn.addEventListener('click', function() {
+        var open = links.classList.toggle('nav-links-open');
+        btn.classList.toggle('hamburger-open', open);
+        btn.setAttribute('aria-expanded', open);
+      });
+      // Close menu when a link is clicked
+      links.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() {
+          links.classList.remove('nav-links-open');
+          btn.classList.remove('hamburger-open');
+          btn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+
+    // Lightbox
+    (function() {
+      var lb = document.getElementById('lightbox');
+      var lbImg = document.getElementById('lightbox-img');
+      document.querySelectorAll('.shot').forEach(function(shot) {
+        shot.addEventListener('click', function() {
+          var img = shot.querySelector('img');
+          if (!img || !img.src) return;
+          lbImg.src = img.src;
+          lbImg.alt = img.alt;
+          lb.classList.add('lightbox-open');
+          lb.setAttribute('aria-hidden', 'false');
+        });
+      });
+      lb.addEventListener('click', function(e) {
+        if (e.target === lb || e.target.classList.contains('lightbox-close')) {
+          lb.classList.remove('lightbox-open');
+          lb.setAttribute('aria-hidden', 'true');
+        }
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && lb.classList.contains('lightbox-open')) {
+          lb.classList.remove('lightbox-open');
+          lb.setAttribute('aria-hidden', 'true');
+        }
+      });
+    })();
+
+    // Scroll to top
+    (function() {
+      var btn = document.getElementById('scroll-top');
+      window.addEventListener('scroll', function() {
+        btn.classList.toggle('scroll-top-visible', window.scrollY > 600);
+      });
+      btn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
   </script>
 </body>
 </html>
