@@ -297,10 +297,10 @@
     }
 
     .hero-title {
-      font-family: 'Cinzel', serif;
-      font-size: clamp(2.7rem, 4.8vw, 4rem);
-      font-weight: 700; line-height: 1.06;
-      letter-spacing: -0.01em;
+      font-family: 'Merriweather', Georgia, serif;
+      font-size: clamp(2.1rem, 3.6vw, 3.1rem);
+      font-weight: 700; line-height: 1.18;
+      letter-spacing: -0.02em;
       margin-bottom: 1.4rem;
     }
     .hero-title .grad {
@@ -349,56 +349,11 @@
       min-height: 300px;
     }
 
-    /* Floating info chips */
-    .chip-float {
-      position: absolute;
-      display: flex; align-items: center; gap: 0.5rem;
-      padding: 0.5rem 0.95rem;
-      background: rgba(10,15,28,0.92);
-      backdrop-filter: blur(14px);
-      border: 1px solid var(--border-bright);
-      border-radius: var(--r-md);
-      font-size: 0.8rem; font-weight: 500;
-      box-shadow: var(--shadow-md);
-      white-space: nowrap;
-      z-index: 2;
-    }
-    .chip-float-tl {
-      top: -14px; left: 22px;
-      color: var(--teal); border-color: var(--teal-border);
-    }
-    .chip-float-br {
-      bottom: -14px; right: 22px;
-      color: var(--purple); border-color: rgba(167,139,250,0.28);
-    }
+    /* Floating info chips — hidden */
+    .chip-float { display: none; }
 
-    /* ============================================================
-       TICKER / MARQUEE
-    ============================================================ */
-    .ticker {
-      position: relative; z-index: 1;
-      border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
-      background: var(--bg-surface);
-      padding: 0.78rem 0; overflow: hidden;
-    }
-    .ticker-track {
-      display: flex; gap: 3.5rem;
-      animation: marquee 30s linear infinite;
-      width: max-content;
-    }
-    .ticker-item {
-      display: flex; align-items: center; gap: 0.6rem;
-      font-size: 0.8rem; color: var(--text-secondary);
-      white-space: nowrap; flex-shrink: 0;
-    }
-    .ticker-dot {
-      width: 4px; height: 4px; border-radius: 50%;
-      background: var(--teal); flex-shrink: 0;
-    }
-    @keyframes marquee {
-      from { transform: translateX(0); }
-      to   { transform: translateX(-50%); }
-    }
+    /* Ticker hidden */
+    .ticker { display: none; }
 
     /* ============================================================
        ABOUT
@@ -455,10 +410,10 @@
     }
     .product-banner img { width: 100%; aspect-ratio: 16/7; object-fit: cover; display: block; }
 
-    /* Features grid: 3-col with some wide cards */
+    /* Features grid: auto-fit, all cards equal width */
     .features-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.2rem;
     }
     .feat {
@@ -476,7 +431,7 @@
     }
     .feat:hover { border-color: rgba(45,212,191,0.2); transform: translateY(-3px); box-shadow: 0 14px 42px rgba(0,0,0,0.65); }
     .feat:hover::before { opacity: 1; }
-    .feat-wide { grid-column: span 2; }
+    /* .feat-wide removed — all cards equal width */
 
     .feat-icon {
       width: 44px; height: 44px; border-radius: var(--r-md);
@@ -674,7 +629,6 @@
       .hero-visual { order: -1; }
       .chip-float { display: none; }
       .features-grid, .tech-grid { grid-template-columns: repeat(2,1fr); }
-      .feat-wide { grid-column: span 2; }
       .audience-grid { grid-template-columns: 1fr; max-width: 400px; }
       .media-grid { grid-template-columns: repeat(2,1fr); }
       .docs-inner { grid-template-columns: 1fr; }
@@ -686,7 +640,6 @@
       .nav-links { display: none; }
       .hero { min-height: auto; padding: 2.5rem 0 3rem; }
       .features-grid, .tech-grid { grid-template-columns: 1fr; }
-      .feat-wide { grid-column: span 1; }
       .audience-grid { max-width: 100%; }
       .media-grid { grid-template-columns: 1fr; }
       .hero-actions, .product-cta-row { flex-direction: column; align-items: stretch; }
